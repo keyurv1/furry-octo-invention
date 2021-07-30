@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullscreenActivity">
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-66dp" />
+
+    <ImageView
+        android:id="@+id/click"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/set_bg"
+        android:padding="15dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/add"
+        app:tint="#FAF5F5" />
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/set_bg"
+        android:padding="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/click"
+        app:srcCompat="@drawable/edit_wall"
+        app:tint="#FAF5F5" />
+
+    <ImageView
+        android:id="@+id/set"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/set_bg"
+        android:padding="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/click"
+        app:srcCompat="@drawable/setwall"
+        app:tint="#FAF5F5" />
+
+    <ImageView
+        android:id="@+id/download"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/set_bg"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/download"
+        app:tint="#FFFFFF" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

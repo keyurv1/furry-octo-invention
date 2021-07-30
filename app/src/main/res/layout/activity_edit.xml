@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/editphotoView"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/filter1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s1" />
+
+            <ImageView
+                android:id="@+id/filter2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s2" />
+
+            <ImageView
+                android:id="@+id/filter3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s3" />
+
+            <ImageView
+                android:id="@+id/filter4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s4" />
+
+            <ImageView
+                android:id="@+id/filter5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s5" />
+
+            <ImageView
+                android:id="@+id/filter6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/s6" />
+
+            <ImageView
+                android:id="@+id/filter7"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s7" />
+
+            <ImageView
+                android:id="@+id/filter8"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s8" />
+
+            <ImageView
+                android:id="@+id/filter9"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s9" />
+
+            <ImageView
+                android:id="@+id/filter10"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/s10" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/setWall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/set_bg"
+        android:padding="12dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/editphotoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/setwall"
+        app:tint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/downloadWall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/set_bg"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/setWall"
+        app:srcCompat="@drawable/download"
+        app:tint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/editwall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/set_bg"
+        android:padding="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/setWall"
+        app:srcCompat="@drawable/edit_wall"
+        app:tint="#FFFFFF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
